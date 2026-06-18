@@ -1,0 +1,66 @@
+# Atelier Willehem — Couvreur Rueil-Malmaison (92)
+
+> Artisan couvreur-zingueur qualifié intervenant à Rueil-Malmaison et dans les Hauts-de-Seine (92). Spécialiste des travaux de toiture en zinc, ardoise naturelle et tuile. Garantie décennale incluse.
+
+## Contact & Informations Légales
+- **Téléphone :** [06 33 32 82 76](tel:+33633328276) (devis gratuit et dépannages d'urgence)
+- **E-mail :** contact@atelierwillehem.fr
+- **Adresse principale :** Rueil-Malmaison, 92500
+- **SIRET :** 833 926 983 00028
+- **Formulaire de devis :** accessible sur [/contact.html](/contact.html)
+- **Zone d'intervention :** Rueil-Malmaison, Nanterre, Bougival, La Celle-Saint-Cloud, Chatou, Le Vésinet, Suresnes, Puteaux, Courbevoie, Neuilly-sur-Seine, Saint-Cloud, Versailles.
+
+## Structure du site & Liens clés
+
+### Rubriques principales
+- **[Accueil (Pilier)](/)** : Présentation générale de l'artisan, de ses engagements et de son secteur.
+- **[Galerie de réalisations](/realisations.html)** : Photos de chantiers récents classées par catégories (couverture, zinguerie, Velux, gouttières).
+- **[À propos d'Atelier Willehem](/a-propos.html)** : L'histoire de l'atelier, notre charte de qualité et nos assurances (décennale).
+- **[Formulaire de Devis](/contact.html)** : Demandes de devis en ligne gratuites.
+
+### Hubs de services
+- **[Couverture](/couverture/)** : Travaux sur les toits en zinc, tuiles et ardoises.
+- **[Zinguerie](/zinguerie/)** : Façonnage et installation d'éléments métalliques de toiture.
+- **[Velux & Fenêtres de toit](/velux/)** : Pose, étanchéité et remplacement de fenêtres de toit.
+- **[Gouttières](/goutieres/)** : Pose, nettoyage et dépannage de gouttières pluviales.
+- **[Urgence & Dépannage](/urgence/)** : Recherche de fuites de toiture, bâchage et réparations après tempête.
+- **[Diagnostic & Conseil](/diagnostic/)** : Diagnostic d'état de toiture et choix des matériaux.
+
+### Pages de détails des services
+
+#### Couverture
+- [/couverture/pose-toiture-zinc-tuile-ardoise.html](/couverture/pose-toiture-zinc-tuile-ardoise.html) : Installation de toitures neuves.
+- [/couverture/renovation-toiture.html](/couverture/renovation-toiture.html) : Rénovation complète et dépose de toiture.
+- [/couverture/reparation-toiture.html](/couverture/reparation-toiture.html) : Remplacement de tuiles et réparations localisées.
+- [/couverture/demoussage-toiture.html](/couverture/demoussage-toiture.html) : Nettoyage et élimination de la mousse.
+- [/couverture/traitement-hydrofuge.html](/couverture/traitement-hydrofuge.html) : Protection imperméabilisante de toiture.
+- [/couverture/ecran-sous-toiture.html](/couverture/ecran-sous-toiture.html) : Pose de membranes de protection.
+- [/couverture/isolation-toiture.html](/couverture/isolation-toiture.html) : Isolation thermique de combles et toitures.
+
+#### Zinguerie
+- [/zinguerie/habillage-cheminee-zinc.html](/zinguerie/habillage-cheminee-zinc.html) : Protection métallique de souche de cheminée.
+- [/zinguerie/noues-aretes-faitage.html](/zinguerie/noues-aretes-faitage.html) : Étanchéité des intersections de toits.
+- [/zinguerie/solins-closoirs.html](/zinguerie/solins-closoirs.html) : Étanchéité de raccords de murs et faîtages.
+- [/zinguerie/habillage-lucarnes.html](/zinguerie/habillage-lucarnes.html) : Habillage protecteur de chiens-assis et lucarnes.
+- [/zinguerie/cheneaux-descentes-zinc.html](/zinguerie/cheneaux-descentes-zinc.html) : Évacuation métallique d'eaux pluviales.
+
+#### Velux & Fenêtres de toit
+- [/velux/installation-velux-neuf.html](/velux/installation-velux-neuf.html) : Création d'ouvertures de toit.
+- [/velux/remplacement-velux.html](/velux/remplacement-velux.html) : Remplacement de fenêtres de toit usagées.
+- [/velux/etancheite-fenetre-de-toit.html](/velux/etancheite-fenetre-de-toit.html) : Raccords d'étanchéité périphériques.
+- [/velux/volets-roulants-velux.html](/velux/volets-roulants-velux.html) : Pose de volets roulants électriques et solaires.
+
+#### Gouttières
+- [/goutieres/installation-goutieres.html](/goutieres/installation-goutieres.html) : Pose de gouttières neuves en zinc et alu.
+- [/goutieres/nettoyage-goutieres.html](/goutieres/nettoyage-goutieres.html) : Débouchage et retrait de feuilles.
+- [/goutieres/reparation-goutieres.html](/goutieres/reparation-goutieres.html) : Réparation de joints fuyants et fixations.
+- [/goutieres/remplacement-descentes-ep.html](/goutieres/remplacement-descentes-ep.html) : Changement de tuyaux de descente d'eau pluviale.
+
+#### Urgence & Dépannage
+- [/urgence/intervention-fuite-urgente.html](/urgence/intervention-fuite-urgente.html) : Dépannage rapide d'infiltration.
+- [/urgence/bachage-toiture-urgence.html](/urgence/bachage-toiture-urgence.html) : Mise en sécurité temporaire.
+- [/urgence/reparation-apres-tempete.html](/urgence/reparation-apres-tempete.html) : Réparation suite aux sinistres météo.
+
+#### Diagnostic
+- [/diagnostic/bilan-etat-toiture.html](/diagnostic/bilan-etat-toiture.html) : Inspection complète préventive.
+- [/diagnostic/conseil-choix-materiaux.html](/diagnostic/conseil-choix-materiaux.html) : Accompagnement technique des choix de couverture.

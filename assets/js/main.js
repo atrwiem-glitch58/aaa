@@ -208,3 +208,64 @@
     });
   });
 })();
+
+/* ===== WebMCP Integration ===== */
+(function () {
+  if (typeof navigator !== 'undefined' && 'modelContext' in navigator) {
+    navigator.modelContext.registerTool({
+      name: 'demanderDevis',
+      description: 'Envoyer une demande de devis ou de contact pour des travaux de toiture à Atelier Willehem. Ce formulaire transmet directement les détails à l\'artisan couvreur.',
+      inputSchema: {
+        type: 'object',
+        properties: {
+          prenom: { type: 'string', description: 'Prénom du demandeur' },
+          nom: { type: 'string', description: 'Nom du demandeur' },
+          telephone: { type: 'string', description: 'Numéro de téléphone' },
+          email: { type: 'string', description: 'Adresse email du demandeur' },
+          commune: { type: 'string', description: 'Commune ou ville du chantier (ex: Rueil-Malmaison)' },
+          service: {
+            type: 'string',
+            description: 'Type de prestation demandée (ex: Rénovation complète de toiture, Pose de toiture neuve, Démoussage / nettoyage, Réparation gouttières, Pose Velux neuf)'
+          },
+          description: { type: 'string', description: 'Description détaillée du projet et des travaux à effectuer' },
+          disponibilites: { type: 'string', description: 'Disponibilités pour une visite sur place (optionnel)' }
+        },
+        required: ['prenom', 'nom', 'telephone', 'email', 'commune', 'service']
+      },
+      execute: async (input) => {
+        const form = document.getElementById('contact-form');
+        if (!form) {
+          return { content: [{ type: 'text', text: 'Erreur: Le formulaire de contact est introuvable sur cette page.' }] };
+        }
+        
+        // Remplir les champs du formulaire
+        for (const [key, value] of Object.entries(input)) {
+          const field = form.querySelector(`[name="${key}"], [id="${key}"]`);
+          if (field) {
+            field.value = value;
+          }
+        }
+        
+        // Simuler la soumission
+        const formData = new FormData(form);
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { Accept: 'application/json' }
+          });
+          if (res.ok) {
+            form.style.display = 'none';
+            const s = document.getElementById('form-success');
+            if (s) s.style.display = 'block';
+            return { content: [{ type: 'text', text: 'Succès: La demande de devis a été soumise avec succès.' }] };
+          } else {
+            return { content: [{ type: 'text', text: 'Erreur: Échec de la soumission du formulaire au serveur.' }] };
+          }
+        } catch (error) {
+          return { content: [{ type: 'text', text: `Erreur technique lors de la soumission: ${error.message}` }] };
+        }
+      }
+    });
+  }
+})();

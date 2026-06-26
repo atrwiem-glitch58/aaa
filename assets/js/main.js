@@ -3,23 +3,43 @@
    ============================================================ */
 'use strict';
 
-/* ===== Header scroll ===== */
+/* ===== Scroll Optimization (Header & Parallax) ===== */
 (function () {
   const header = document.getElementById('header');
-  if (!header) return;
-  const update = () => header.classList.toggle('header--scrolled', window.scrollY > 40);
-  window.addEventListener('scroll', update, { passive: true });
-  update();
+  const bg = document.querySelector('.hero__bg');
+  const hasParallax = bg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!header && !hasParallax) return;
+
+  let lastScrollY = 0;
+  let ticking = false;
+
+  const updateScroll = () => {
+    const y = lastScrollY;
+    if (header) {
+      header.classList.toggle('header--scrolled', y > 40);
+    }
+    if (hasParallax) {
+      bg.style.transform = `scale(1.06) translateY(${y * 0.22}px)`;
+    }
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      window.requestAnimationFrame(updateScroll);
+      ticking = true;
+    }
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  
+  // Run once initially
+  lastScrollY = window.scrollY;
+  updateScroll();
 })();
 
-/* ===== Hero parallax ===== */
-(function () {
-  const bg = document.querySelector('.hero__bg');
-  if (!bg || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  window.addEventListener('scroll', () => {
-    bg.style.transform = `scale(1.06) translateY(${window.scrollY * 0.22}px)`;
-  }, { passive: true });
-})();
 
 /* ===== Mobile menu ===== */
 (function () {

@@ -254,6 +254,15 @@ strong { color: var(--text); font-weight: 600; }
   transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
   box-shadow: var(--sh-hover);
 }
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
+}
 .has-dropdown:hover .dropdown {
   opacity: 1;
   pointer-events: all;

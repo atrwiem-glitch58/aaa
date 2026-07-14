@@ -476,7 +476,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ===== 8. PAGE HERO (pages intérieures) ===== */
 .page-hero {
   position: relative;
-  min-height: 420px;
+  min-height: 460px;
   display: flex;
   align-items: flex-end;
   padding-top: var(--header-h);
@@ -493,7 +493,7 @@ strong { color: var(--text); font-weight: 600; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(13,17,23,0.88) 0%, rgba(13,17,23,0.3) 60%, rgba(13,17,23,0.1) 100%);
+  background: linear-gradient(to top, rgba(13,17,23,0.8) 0%, rgba(13,17,23,0.15) 30%, rgba(13,17,23,0) 80%);
 }
 .page-hero__content { position: relative; z-index: 1; }
 .page-hero h1 { margin-top: var(--sp-4); }

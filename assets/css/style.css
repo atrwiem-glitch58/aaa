@@ -17,6 +17,19 @@ body {
 }
 img, video { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
+p a,
+.page-main a:not(.btn) {
+  color: var(--copper-light);
+  text-decoration: underline;
+  text-decoration-color: var(--copper-glow);
+  text-underline-offset: 4px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+p a:hover,
+.page-main a:not(.btn):hover {
+  color: var(--text);
+  text-decoration-color: var(--copper-light);
+}
 ul { list-style: none; }
 button { border: none; background: none; cursor: pointer; font-family: inherit; }
 input, select, textarea { font-family: inherit; }

@@ -491,11 +491,10 @@ strong { color: var(--text); font-weight: 600; }
 .page-hero__bg {
   position: absolute;
   inset: 0;
-  background-color: var(--bg-alt) !important;
   background-size: cover;
   background-position: center;
 }
-/* Force override light theme background on inline dark gradient styles */
+/* S'IL N'Y A PAS D'IMAGE : on force le fond beige clair et on ecrase le gradient sombre */
 .page-hero__bg:not([style*="background-image"]) {
   background: var(--bg-alt) !important;
 }
@@ -503,11 +502,7 @@ strong { color: var(--text); font-weight: 600; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-    rgba(250,250,247,0.94) 0%,
-    rgba(250,250,247,0.76) 50%,
-    rgba(250,250,247,0.40) 100%
-  ) !important;
+  background: transparent !important;
 }
 .page-hero__content { position: relative; z-index: 1; }
 .page-hero h1 {
@@ -526,6 +521,37 @@ strong { color: var(--text); font-weight: 600; }
 }
 .page-hero .section-label {
   color: var(--copper) !important;
+}
+
+/* AVEC PHOTO : overlay sombre + texte blanc */
+.page-hero:has(.page-hero__bg[style*="background-image"]) .page-hero__bg::after {
+  background: linear-gradient(to top,
+    rgba(10,8,6,0.82) 0%,
+    rgba(10,8,6,0.52) 50%,
+    rgba(10,8,6,0.18) 100%
+  ) !important;
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) .page-hero__content h1,
+.page-hero:has(.page-hero__bg[style*="background-image"]) .page-hero__content .breadcrumb__item,
+.page-hero:has(.page-hero__bg[style*="background-image"]) .page-hero__content .breadcrumb__item a,
+.page-hero:has(.page-hero__bg[style*="background-image"]) .page-hero__content .section-label {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) h1 {
+  color: #FFFFFF !important;
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) .breadcrumb__item,
+.page-hero:has(.page-hero__bg[style*="background-image"]) .breadcrumb__item a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) .breadcrumb__item a:hover {
+  color: #FFFFFF;
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) .breadcrumb__sep {
+  color: rgba(255, 255, 255, 0.4);
+}
+.page-hero:has(.page-hero__bg[style*="background-image"]) .section-label {
+  color: var(--copper-light) !important;
 }
 
 /* ===== 9. BREADCRUMB ===== */

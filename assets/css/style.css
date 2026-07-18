@@ -387,9 +387,9 @@ strong { color: var(--text); font-weight: 600; }
   inset: 0;
   background: linear-gradient(
     130deg,
-    rgba(20,18,16,0.82) 0%,
-    rgba(20,18,16,0.58) 45%,
-    rgba(20,18,16,0.76) 100%
+    rgba(14,12,10,0.93) 0%,
+    rgba(14,12,10,0.72) 45%,
+    rgba(14,12,10,0.88) 100%
   );
 }
 .hero__content {
@@ -495,7 +495,7 @@ strong { color: var(--text); font-weight: 600; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(20,18,16,0.86) 0%, rgba(20,18,16,0.42) 50%, rgba(20,18,16,0.10) 100%);
+  background: linear-gradient(to top, rgba(14,12,10,0.93) 0%, rgba(14,12,10,0.62) 50%, rgba(14,12,10,0.30) 100%);
 }
 .page-hero__content { position: relative; z-index: 1; }
 .page-hero h1 { margin-top: var(--sp-4); }
@@ -606,6 +606,8 @@ strong { color: var(--text); font-weight: 600; }
   display: block;
   line-height: 1;
 }
+/* Cache les icônes emoji vides après suppression */
+.service-card__icon:empty { display: none; margin: 0; }
 .service-card__title {
   font-family: var(--font-display);
   font-size: 1.2rem;

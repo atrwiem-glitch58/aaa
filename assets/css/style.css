@@ -408,14 +408,14 @@ strong { color: var(--text); font-weight: 600; }
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--copper-light);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: var(--sp-6);
 }
 .hero__eyebrow::before {
   content: '';
   width: 36px;
   height: 1px;
-  background: var(--copper);
+  background: rgba(255, 255, 255, 0.4);
 }
 .hero h1 {
   font-size: clamp(2.25rem, 5.5vw, 4rem);
@@ -425,7 +425,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .hero h1 em {
   font-style: italic;
-  color: #A8C0D6;
+  color: #FFFFFF;
 }
 .hero__lead {
   font-size: 1.1rem;

@@ -425,7 +425,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .hero h1 em {
   font-style: italic;
-  color: #FFFFFF;
+  color: var(--copper-light);
 }
 .hero__lead {
   font-size: 1.1rem;

@@ -51,6 +51,7 @@
 
   const open = () => {
     menu.classList.add('open');
+    menu.setAttribute('aria-hidden', 'false');
     btn.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
     spans[0].style.transform = 'translateY(9px) rotate(45deg)';
@@ -60,6 +61,7 @@
 
   const close = () => {
     menu.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
     btn.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
     spans[0].style.transform = '';

@@ -185,28 +185,74 @@
  }
  .sim-options {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
- gap: 0.75rem;
- margin-top: 0.5rem;
- }
- .sim-btn {
- background: var(--bg);
- border: 1px solid var(--border);
- border-radius: var(--r-md);
- padding: 0.85rem;
- text-align: left;
- cursor: pointer;
- transition: all 0.2s;
- }
- .sim-btn.active {
- border-color: var(--copper);
- background: rgba(192,119,58,0.08);
- box-shadow: 0 0 0 2px var(--copper);
- }
- @media (max-width: 900px) {
- .hero-tx-grid { grid-template-columns: 1fr; }
- .sim-item-row { grid-template-columns: 1fr !important; }
- }
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-xl);
+      padding: 2rem;
+      box-shadow: var(--sh-card);
+      margin-block: 2.5rem;
+    }
+    .sim-item-row {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 1.25rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.2fr 1.5fr 0.6fr auto;
+      align-items: end;
+      box-shadow: var(--sh-sm);
+      position: relative;
+    }
+    .sim-item-row select,
+    .sim-item-row input {
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    .sim-row-footer {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .sim-remove-btn {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      color: #dc2626;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.45rem 0.75rem;
+      border-radius: var(--r-md);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .sim-remove-btn:hover {
+      background: #dc2626;
+      color: #ffffff;
+    }
+
+    @media (max-width: 900px) {
+      .hero-tx-grid { grid-template-columns: 1fr; }
+      .sim-card {
+        padding: 1.25rem 1rem;
+        border-radius: var(--r-lg);
+        margin-block: 1.5rem;
+      }
+      .sim-item-row {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+        padding: 1rem;
+      }
+      .sim-row-footer {
+        width: 100%;
+        justify-content: space-between;
+        border-top: 1px dashed var(--border);
+        padding-top: 0.75rem;
+        margin-top: 0.25rem;
+      }
+    }
  </style>
 </head>
 <body>
@@ -796,7 +842,6 @@
         const row = document.createElement('div');
         row.className = 'sim-item-row';
         row.dataset.rowId = rowIdCounter;
-        row.style.cssText = 'background:var(--bg-card); border:1px solid var(--border); border-radius:var(--r-lg); padding:1.25rem; display:grid; gap:1rem; grid-template-columns:1.2fr 1.5fr 0.6fr auto; align-items:end; shadow:var(--sh-sm); position:relative;';
 
         row.innerHTML = `
           <div>
@@ -823,13 +868,13 @@
             </label>
             <input type="number" class="form-input sim-qty-input" value="1" min="1" max="20" style="font-size:0.85rem; padding:0.5rem 0.75rem; text-align:center;">
           </div>
-          <div style="display:flex; gap:0.5rem; align-items:center;">
+          <div class="sim-row-footer">
             <div style="text-align:right;">
-              <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase;">Sous-total TTC</div>
+              <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase; font-weight:600;">Sous-total TTC</div>
               <div class="sim-row-price" style="font-size:1.1rem; font-weight:700; color:var(--copper);">0 €</div>
             </div>
-            <button type="button" class="sim-remove-btn" title="Supprimer cette ligne" style="background:none; border:none; color:#ef4444; font-size:1.2rem; cursor:pointer; padding:0.3rem 0.5rem; margin-left:0.5rem; display:none;">
-              
+            <button type="button" class="sim-remove-btn" title="Supprimer cette ligne" style="display:none;">
+              Supprimer
             </button>
           </div>
         `;

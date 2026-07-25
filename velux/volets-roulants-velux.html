@@ -12,7 +12,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="robots" content="index, follow">
  <title>Pose Volet Roulant Velux Rueil-Malmaison (92) · Devis &amp; Prix 24h</title>
- <meta name="description" content="Installation de volets roulants Velux à Rueil-Malmaison (92). Simulateur de prix en ligne, fourniture officielle Velux + pose garantie décennale. Devis gratuit sous 24h : 06 33 32 82 76.">
+ <meta name="description" content="Installation de volets roulants Velux à Rueil-Malmaison (92). Simulateur de prix en ligne, fourniture Velux + pose garantie décennale. Devis gratuit sous 24h : 06 33 32 82 76.">
  <link rel="canonical" href="https://atelierwillehem.fr/velux/volets-roulants-velux.html">
  <meta property="og:type" content="website">
  <meta property="og:title" content="Pose Volet Roulant Velux Rueil-Malmaison · Atelier Willehem">
@@ -205,6 +205,7 @@
  }
  @media (max-width: 900px) {
  .hero-tx-grid { grid-template-columns: 1fr; }
+ .sim-item-row { grid-template-columns: 1fr !important; }
  }
  </style>
 </head>
@@ -281,7 +282,7 @@
  </nav>
  
  <span class="section-label" style="background:rgba(192,119,58,0.12); border-color:rgba(192,119,58,0.3); color:var(--copper); font-weight:600;">
- Fourniture officielle Velux &amp; Pose Artisanale 92
+ Pose &amp; Installation de Volets Velux dans le 92
  </span>
  
  <h1 style="font-size:clamp(2rem, 4vw, 2.75rem); line-height:1.2; margin-block:0.75rem; font-family:var(--font-display); font-weight:300; color:var(--text);">
@@ -499,303 +500,388 @@
  </div>
  </section>
 
- <!-- SIMULATEUR INTERACTIF COMPLET -->
- <section class="section" id="simulateur">
- <div class="container">
- <div class="sim-card reveal">
- <div class="text-center" style="max-width:650px; margin-inline:auto; margin-bottom:2rem;">
- <span class="section-label">Simulateur en ligne</span>
- <h2>Calculez votre tarif Fourniture + Pose en 1 minute</h2>
- <p style="color:var(--text-muted); font-size:0.9rem;">Obtenez une estimation exacte basée sur la grille tarifaire officielle et notre tarif fixe de pose à Rueil-Malmaison (150 € TTC/volet) :</p>
- </div>
+  <!-- EXPLICATION PLAQUE D'IDENTIFICATION -->
+  <section class="section section--sm">
+    <div class="container">
+      <div style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--r-xl); padding:1.75rem 2rem; box-shadow:var(--sh-card);">
+        <div style="display:flex; gap:1rem; align-items:flex-start; flex-wrap:wrap;">
+          <div style="font-size:2rem; line-height:1; flex-shrink:0;">🔍</div>
+          <div style="flex:1; min-width:280px;">
+            <h3 style="font-size:1.15rem; margin-bottom:0.4rem; color:var(--text); font-weight:600;">
+              Comment trouver le code dimensionnel de votre fenêtre Velux ?
+            </h3>
+            <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.6; margin-bottom:0.75rem;">
+              Chaque fenêtre Velux possède une <strong>plaque d'identification métallique</strong> (ou synthétique) visible lorsque vous ouvrez l'ouvrant en position basculée (sur la tranche supérieure droite ou gauche).
+            </p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.75rem; font-size:0.82rem; background:var(--bg-alt); padding:0.85rem 1rem; border-radius:var(--r-md); border:1px solid var(--border);">
+              <div>1. Ouvrez la fenêtre en grand.</div>
+              <div>2. Repérez le code (ex: <strong>GGL MK06 3059</strong>).</div>
+              <div>3. Le format est le code central (ex: <strong>MK06</strong>, <strong>CK02</strong>, <strong>UK08</strong>).</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <!-- 1. Motorisation -->
- <div style="margin-bottom:1.5rem;">
- <label class="form-label" style="font-size:0.85rem; font-weight:700; color:var(--text); margin-bottom:0.5rem; display:block;">
- 1. Choisissez le modèle de volet
- </label>
- <div class="sim-options">
- <button type="button" class="sim-btn active" data-type="type" data-val="ssl">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Solaire Aluminium (SSL)</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Recommandé · Autonome</div>
- </button>
- <button type="button" class="sim-btn" data-type="type" data-val="sml">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Électrique Aluminium (SML)</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Filaire 230V</div>
- </button>
- <button type="button" class="sim-btn" data-type="type" data-val="sss">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Souple Solaire (SSS)</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Toile polyester solaire</div>
- </button>
- </div>
- </div>
+  <!-- SIMULATEUR INTERACTIF MULTI-FENÊTRES COMPLET -->
+  <section class="section" id="simulateur">
+    <div class="container">
+      <div class="sim-card reveal">
+        <div class="text-center" style="max-width:650px; margin-inline:auto; margin-bottom:2rem;">
+          <span class="section-label">Simulateur Personnalisé Sur-Mesure</span>
+          <h2>Calculez le prix exact de vos volets Velux</h2>
+          <p style="color:var(--text-muted); font-size:0.9rem;">Sélectionnez le modèle et la référence exacte de vos fenêtres. Vous pouvez ajouter autant de fenêtres de tailles différentes que vous le souhaitez :</p>
+        </div>
 
- <!-- 2. Taille -->
- <div style="margin-bottom:1.5rem;">
- <label class="form-label" style="font-size:0.85rem; font-weight:700; color:var(--text); margin-bottom:0.5rem; display:block;">
- 2. Taille approximative de la fenêtre Velux
- </label>
- <div class="sim-options">
- <button type="button" class="sim-btn" data-type="size" data-val="small">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Petite taille</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Largeur 55 cm</div>
- </button>
- <button type="button" class="sim-btn active" data-type="size" data-val="medium">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Taille moyenne (Standard)</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Largeur 78 cm</div>
- </button>
- <button type="button" class="sim-btn" data-type="size" data-val="large">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">Grande taille</div>
- <!-- 3. Quantité -->
- <div style="margin-bottom:1.5rem;">
- <label class="form-label" style="font-size:0.85rem; font-weight:700; color:var(--text); margin-bottom:0.5rem; display:block;">
- 3. Nombre de volets à installer
- </label>
- <div class="sim-options">
- <button type="button" class="sim-btn active" data-type="qty" data-val="1">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">1 Volet</div>
- <div style="font-size:0.75rem; color:var(--text-muted);">Pose standard</div>
- </button>
- <button type="button" class="sim-btn" data-type="qty" data-val="2">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">2 Volets</div>
- <div style="font-size:0.75rem; color:var(--copper); font-weight:600;">-15% sur la pose</div>
- </button>
- <button type="button" class="sim-btn" data-type="qty" data-val="3">
- <div style="font-weight:700; font-size:0.9rem; color:var(--text);">3 Volets ou +</div>
- <div style="font-size:0.75rem; color:var(--copper); font-weight:600;">-25% sur la pose</div>
- </button>
- </div>
- </div>
+        <!-- CONTENEUR DES LIGNES DE SIMULATION -->
+        <div id="sim-rows-container" style="display:grid; gap:1.25rem;">
+          <!-- La première ligne est injectée dynamiquement par JS -->
+        </div>
 
- <!-- RESULTAT CALCULÉ -->
- <div style="background:linear-gradient(135deg, rgba(192,119,58,0.1) 0%, rgba(26,37,53,0.05) 100%); border:1px solid var(--copper); border-radius:var(--r-lg); padding:1.5rem; margin-top:1.5rem;">
- <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; color:var(--text-muted);">Estimation globale TTC (Fourniture officielle + Pose artisanale)</div>
- <div id="sim-total" style="font-size:2.2rem; font-weight:700; color:var(--copper); line-height:1.1; margin-block:0.5rem;">780 € – 840 € TTC</div>
+        <div style="margin-top:1.25rem; text-align:center;">
+          <button type="button" id="add-sim-row-btn" class="btn btn--outline" style="border-style:dashed; padding:0.6rem 1.25rem; font-size:0.88rem;">
+            + Ajouter une autre fenêtre Velux (Taille ou modèle différent)
+          </button>
+        </div>
 
- <div style="font-size:0.85rem; color:var(--text-muted); display:grid; gap:0.4rem; margin-block:1rem; border-top:1px solid var(--border); padding-top:0.8rem;">
- <div style="display:flex; justify-content:space-between;">
- <span>Fourniture volet officiel Velux :</span>
- <strong id="sim-mat" style="color:var(--text);">560 € TTC</strong>
- </div>
- <div style="display:flex; justify-content:space-between;">
- <span>Main d'œuvre pose décennale Atelier Willehem :</span>
- <strong id="sim-pose" style="color:var(--text);">240 € TTC</strong>
- </div>
- <div id="sim-discount-row" style="display:none; justify-content:space-between; color:var(--copper);">
- <span>Remise groupée multi-volets :</span>
- <strong id="sim-discount">-0 € TTC</strong>
- </div>
- </div>
+        <!-- RESULTAT CALCULÉ GLOBAL -->
+        <div style="background:linear-gradient(135deg, rgba(192,119,58,0.08) 0%, rgba(26,37,53,0.03) 100%); border:1px solid var(--copper); border-radius:var(--r-lg); padding:1.75rem; margin-top:2rem;">
+          <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; color:var(--text-muted);">Estimation globale exacte (Matériel + Pose artisanale 150 €/volet)</div>
+          <div id="sim-total" style="font-size:2.4rem; font-weight:700; color:var(--copper); line-height:1.1; margin-block:0.5rem;">0 € TTC</div>
 
- <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
- <a href="/contact.html" id="sim-cta" class="btn btn--primary btn--lg" style="flex:1; min-width:240px; text-align:center; font-weight:700;">
- Bloquer ce tarif &amp; Recevoir mon devis gratuit →
- </a>
- <a href="tel:+33633328276" class="btn btn--outline btn--lg"> 06 33 32 82 76</a>
- </div>
- </div>
+          <div style="font-size:0.88rem; color:var(--text-muted); display:grid; gap:0.5rem; margin-block:1rem; border-top:1px solid var(--border); padding-top:0.9rem;">
+            <div style="display:flex; justify-content:space-between;">
+              <span>Total Fourniture Velux (<span id="sim-total-count">0</span> volet<span id="sim-plural-s">s</span>) :</span>
+              <strong id="sim-mat" style="color:var(--text);">0 € TTC</strong>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span>Main d'œuvre pose décennale Atelier Willehem (150 € / volet) :</span>
+              <strong id="sim-pose" style="color:var(--text);">0 € TTC</strong>
+            </div>
+          </div>
 
- </div>
- </div>
- </section>
+          <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="/contact.html" id="sim-cta" class="btn btn--primary btn--lg" style="flex:1; min-width:240px; text-align:center; font-weight:700;">
+              Valider ma sélection &amp; Demander mon devis →
+            </a>
+            <a href="tel:+33633328276" class="btn btn--outline btn--lg">06 33 32 82 76</a>
+          </div>
+        </div>
 
- <!-- POURQUOI CHOISIR ATELIER WILLEHEM -->
- <section class="section section--alt">
- <div class="container">
- <div class="page-layout">
- <main class="page-main">
- <h2>Pourquoi faire poser vos volets Velux par Atelier Willehem ?</h2>
- <div class="divider"></div>
- 
- <ul style="list-style:none; padding:0; display:grid; gap:1rem; margin-block:1.5rem;">
- <li style="display:flex; gap:0.75rem; align-items:flex-start;">
- <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;"></span>
- <div>
- <strong>Artisan local basé à Rueil-Malmaison (92)</strong>
- <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">Pas d'intermédiaire ni de sous-traitance. C'est votre artisan couvreur qui réalise l'installation de A à Z.</p>
- </div>
- </li>
- <li style="display:flex; gap:0.75rem; align-items:flex-start;">
- <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;"></span>
- <div>
- <strong>Pose propre en 1/2 journée sans dégradation</strong>
- <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">L'installation du volet roulant solaire se fait directement par la fenêtre de toit sans toucher à la couverture ni aux finitions intérieures.</p>
- </div>
- </li>
- <li style="display:flex; gap:0.75rem; align-items:flex-start;">
- <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;"></span>
- <div>
- <strong>Garantie fabricant Velux 5 ans + Assurance Décennale</strong>
- <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">Nous fournissons les matériels officiels Velux sous garantie constructeur de 5 ans, couplés à notre responsabilité civile décennale.</p>
- </div>
- </li>
- </ul>
+      </div>
+    </div>
+  </section>
 
- <!-- FAQ TRANSACTIONNELLE -->
- <h2 style="margin-top:3rem;">FAQ Réponses rapides</h2>
- <div class="divider"></div>
- <div class="faq">
- <div class="faq-item">
- <div class="faq-question" role="button" tabindex="0">Quel est le délai d'intervention à Rueil-Malmaison ?<span class="faq-icon">+</span></div>
- <div class="faq-answer"><div class="faq-answer-inner"><p>Après validation du devis, nous commandons le volet officiel Velux et planifions la pose sous 5 à 10 jours ouvrés.</p></div></div>
- </div>
- <div class="faq-item">
- <div class="faq-question" role="button" tabindex="0">Peut-on poser un volet sur n'importe quelle génération de Velux ?<span class="faq-icon">+</span></div>
- <div class="faq-answer"><div class="faq-answer-inner"><p>Oui ! Il suffit de nous indiquer le code inscrit sur la plaque métallique de votre fenêtre (ex: GGL MK08). Il existe un volet Velux compatible pour chaque fenêtre fabriquée depuis 1968.</p></div></div>
- </div>
- <div class="faq-item">
- <div class="faq-question" role="button" tabindex="0">Le devis est-il vraiment gratuit ?<span class="faq-icon">+</span></div>
- <div class="faq-answer"><div class="faq-answer-inner"><p>Absolument. La visite d'évaluation sur place et l'établissement du devis chiffré sont 100% gratuits et sans engagement.</p></div></div>
- </div>
- </div>
+  <!-- POURQUOI CHOISIR ATELIER WILLEHEM -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="page-layout">
+        <main class="page-main">
+          <h2>Pourquoi faire poser vos volets Velux par Atelier Willehem ?</h2>
+          <div class="divider"></div>
+          
+          <ul style="list-style:none; padding:0; display:grid; gap:1rem; margin-block:1.5rem;">
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;">✓</span>
+              <div>
+                <strong>Artisan local basé à Rueil-Malmaison (92)</strong>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">Pas d'intermédiaire ni de sous-traitance. C'est votre artisan couvreur qui réalise l'installation de A à Z.</p>
+              </div>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;">✓</span>
+              <div>
+                <strong>Pose propre en 1/2 journée sans dégradation</strong>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">L'installation du volet roulant se fait directement par la fenêtre de toit sans toucher à la couverture ni aux finitions intérieures.</p>
+              </div>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <span style="color:var(--copper); font-weight:700; font-size:1.2rem; flex-shrink:0;">✓</span>
+              <div>
+                <strong>Garantie fabricant Velux 5 ans + Assurance Décennale</strong>
+                <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0.2rem;">Nous fournissons les matériels officiels Velux sous garantie constructeur de 5 ans, couplés à notre responsabilité civile décennale.</p>
+              </div>
+            </li>
+          </ul>
 
- </main>
+          <!-- FAQ TRANSACTIONNELLE -->
+          <h2 style="margin-top:3rem;">FAQ Réponses rapides</h2>
+          <div class="divider"></div>
+          <div class="faq">
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0">Quel est le délai d'intervention à Rueil-Malmaison ?<span class="faq-icon">+</span></div>
+              <div class="faq-answer"><div class="faq-answer-inner"><p>Après validation du devis, nous commandons le volet Velux et planifions la pose sous 5 à 10 jours ouvrés.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0">Peut-on poser un volet sur n'importe quelle génération de Velux ?<span class="faq-icon">+</span></div>
+              <div class="faq-answer"><div class="faq-answer-inner"><p>Oui ! Il suffit de nous indiquer le code inscrit sur la plaque métallique de votre fenêtre (ex: GGL MK08). Il existe un volet Velux compatible pour chaque fenêtre fabriquée depuis 1968.</p></div></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question" role="button" tabindex="0">Le devis est-il vraiment gratuit ?<span class="faq-icon">+</span></div>
+              <div class="faq-answer"><div class="faq-answer-inner"><p>Absolument. La visite d'évaluation sur place et l'établissement du devis chiffré sont 100% gratuits et sans engagement.</p></div></div>
+            </div>
+          </div>
 
- <!-- SIDEBAR -->
- <aside class="sidebar">
- <div class="sidebar-card sidebar-card--cta">
- <div class="sidebar-card__title">Besoin d'un tarif rapide ?</div>
- <a href="tel:+33633328276" class="sidebar-card__phone"> 06 33 32 82 76</a>
- <p>Visite sur place gratuite à Rueil-Malmaison &amp; tout le 92.</p>
- <a href="/contact.html" class="btn btn--primary btn--full">Demander mon devis</a>
- </div>
+        </main>
 
- <div class="sidebar-card">
- <div class="sidebar-card__title">Zone d'intervention</div>
- <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">Rueil-Malmaison, Nanterre, Suresnes, Chatou, Le Vésinet, Bougival, La Celle-Saint-Cloud, Saint-Cloud, Versailles et tout le 92.</p>
- </div>
- </aside>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <div class="sidebar-card sidebar-card--cta">
+            <div class="sidebar-card__title">Besoin d'un tarif rapide ?</div>
+            <a href="tel:+33633328276" class="sidebar-card__phone">06 33 32 82 76</a>
+            <p>Visite sur place gratuite à Rueil-Malmaison &amp; tout le 92.</p>
+            <a href="/contact.html" class="btn btn--primary btn--full">Demander mon devis</a>
+          </div>
 
- </div>
- </div>
- </section>
+          <div class="sidebar-card">
+            <div class="sidebar-card__title">Zone d'intervention</div>
+            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.6;">Rueil-Malmaison, Nanterre, Suresnes, Chatou, Le Vésinet, Bougival, La Celle-Saint-Cloud, Saint-Cloud, Versailles et tout le 92.</p>
+          </div>
+        </aside>
 
- <!-- CTA BANNER FINAL -->
- <section class="section section--sm">
- <div class="container">
- <div class="cta-banner reveal">
- <span class="section-label" style="justify-content:center">Artisan couvreur Rueil-Malmaison</span>
- <h2>Prêt à équiper vos fenêtres Velux ?</h2>
- <p>Obtenez votre devis officiel sous 24h avec pose garantie par Atelier Willehem.</p>
- <div class="cta-banner__actions">
- <a href="/contact.html" class="btn btn--primary btn--lg">Demander un devis gratuit</a>
- <a href="tel:+33633328276" class="btn btn--outline btn--lg"> 06 33 32 82 76</a>
- </div>
- </div>
- </div>
- </section>
+      </div>
+    </div>
+  </section>
 
- <footer class="footer">
- <div class="container footer__grid">
- <div>
- <div class="footer__logo-text">Atelier Willehem</div>
- <p class="footer__tagline">Artisan couvreur-zingueur à Rueil-Malmaison<br>(Hauts-de-Seine — 92)</p>
- <div class="footer__badges">
- <span class="footer__badge">Garantie décennale</span>
- <span class="footer__badge">Artisan qualifié</span>
- </div>
- <p class="footer__siret">SIRET : 833 926 983 00028</p>
- </div>
- <div>
- <h3 class="footer__heading">Nos services</h3>
- <ul class="footer__links">
- <li><a href="/couverture/">Couverture</a></li>
- <li><a href="/zinguerie/">Zinguerie</a></li>
- <li><a href="/velux/">Velux &amp; Fenêtres de toit</a></li>
- <li><a href="/goutieres/">Gouttières</a></li>
- <li><a href="/urgence/">Urgence &amp; Dépannage</a></li>
- <li><a href="/devis/">Devis couvreur</a></li>
- </ul>
- </div>
- <div>
- <h3 class="footer__heading">Contact</h3>
- <div class="footer__contact-row"><span class="footer__contact-icon">- </span><a href="tel:+33633328276">06 33 32 82 76</a></div>
- <div class="footer__contact-row"><span class="footer__contact-icon">- </span><a href="mailto:contact@atelierwillehem.fr">contact@atelierwillehem.fr</a></div>
- <div class="footer__contact-row"><span class="footer__contact-icon">- </span><span>Rueil-Malmaison, 92500</span></div>
- <a href="/contact.html" class="btn btn--outline footer__cta">Nous contacter</a>
- </div>
- <div>
- <h3 class="footer__heading">Zone d'intervention</h3>
- <p class="footer__zones">Rueil-Malmaison · Nanterre · Bougival · La Celle-Saint-Cloud · Chatou · Le Vésinet · Suresnes · Puteaux · Courbevoie · Neuilly-sur-Seine · Saint-Cloud · Versailles</p>
- </div>
- </div>
- <div class="footer__bottom">
- <div class="container footer__bottom-inner">
- <p>© 2025 Atelier Willehem — Couvreur Rueil-Malmaison (92)</p>
- <a href="/blog/">Blog</a>
- <a href="/mentions-legales.html">Mentions légales</a>
- </div>
- </div>
- </footer>
+  <!-- CTA BANNER FINAL -->
+  <section class="section section--sm">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="section-label" style="justify-content:center">Artisan couvreur Rueil-Malmaison</span>
+        <h2>Prêt à équiper vos fenêtres Velux ?</h2>
+        <p>Obtenez votre devis gratuit sous 24h avec pose garantie par Atelier Willehem.</p>
+        <div class="cta-banner__actions">
+          <a href="/contact.html" class="btn btn--primary btn--lg">Demander un devis gratuit</a>
+          <a href="tel:+33633328276" class="btn btn--outline btn--lg">06 33 32 82 76</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
- <a href="tel:+33633328276" class="mobile-cta" aria-label="Appeler Atelier Willehem">
- <span></span><span>06 33 32 82 76</span>
- </a>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__logo-text">Atelier Willehem</div>
+        <p class="footer__tagline">Artisan couvreur-zingueur à Rueil-Malmaison<br>(Hauts-de-Seine — 92)</p>
+        <div class="footer__badges">
+          <span class="footer__badge">Garantie décennale</span>
+          <span class="footer__badge">Artisan qualifié</span>
+        </div>
+        <p class="footer__siret">SIRET : 833 926 983 00028</p>
+      </div>
+      <div>
+        <h3 class="footer__heading">Nos services</h3>
+        <ul class="footer__links">
+          <li><a href="/couverture/">Couverture</a></li>
+          <li><a href="/zinguerie/">Zinguerie</a></li>
+          <li><a href="/velux/">Velux &amp; Fenêtres de toit</a></li>
+          <li><a href="/goutieres/">Gouttières</a></li>
+          <li><a href="/urgence/">Urgence &amp; Dépannage</a></li>
+          <li><a href="/devis/">Devis couvreur</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer__heading">Contact</h3>
+        <div class="footer__contact-row"><span class="footer__contact-icon">- </span><a href="tel:+33633328276">06 33 32 82 76</a></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">- </span><a href="mailto:contact@atelierwillehem.fr">contact@atelierwillehem.fr</a></div>
+        <div class="footer__contact-row"><span class="footer__contact-icon">- </span><span>Rueil-Malmaison, 92500</span></div>
+        <a href="/contact.html" class="btn btn--outline footer__cta">Nous contacter</a>
+      </div>
+      <div>
+        <h3 class="footer__heading">Zone d'intervention</h3>
+        <p class="footer__zones">Rueil-Malmaison · Nanterre · Bougival · La Celle-Saint-Cloud · Chatou · Le Vésinet · Suresnes · Puteaux · Courbevoie · Neuilly-sur-Seine · Saint-Cloud · Versailles</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 Atelier Willehem — Couvreur Rueil-Malmaison (92)</p>
+        <a href="/blog/">Blog</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
 
- <!-- SCRIPT SIMULATEUR JS -->
- <script src="/assets/js/main.js" defer></script>
- <script>
+  <a href="tel:+33633328276" class="mobile-cta" aria-label="Appeler Atelier Willehem">
+    <span></span><span>06 33 32 82 76</span>
+  </a>
+
+  <!-- SCRIPT SIMULATEUR JS MULTI-LIGNES PARFAIT -->
+  <script src="/assets/js/main.js" defer></script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const priceMatrix = {
-        ssl: { small: 619, medium: 739, large: 879 },
-        sml: { small: 465, medium: 529, large: 619 },
-        sss: { small: 369, medium: 439, large: 519 }
+      // Grille tarifaire exacte catalogue (TTC)
+      const catalogPrices = {
+        ssl: {
+          'CK01': 619, 'CK02': 619, 'CK04': 659,
+          'MK04': 669, 'MK06': 739, 'MK08': 779,
+          'PK06': 799, 'PK08': 799, 'PK10': 799,
+          'SK06': 799, 'SK08': 919,
+          'UK04': 879, 'UK08': 989,
+          'CODE6': 659, 'CODE9': 659
+        },
+        sml: {
+          'CK01': 445, 'CK02': 465, 'CK04': 469,
+          'MK04': 499, 'MK06': 529, 'MK08': 555,
+          'PK06': 609, 'PK08': 609, 'PK10': 609,
+          'SK06': 609, 'SK08': 659,
+          'UK04': 619, 'UK08': 705,
+          'CODE6': 469, 'CODE9': 449
+        },
+        sss: {
+          'CK01': 369, 'CK02': 369, 'CK04': 389,
+          'MK04': 419, 'MK06': 439, 'MK08': 459,
+          'PK06': 469, 'PK08': 499, 'PK10': 529,
+          'SK06': 509, 'SK08': 539,
+          'UK04': 519, 'UK08': 589,
+          'CODE6': 419, 'CODE9': 419
+        }
       };
 
-      const typeLabels = {
+      const modelNames = {
         ssl: 'Solaire Aluminium (SSL)',
         sml: 'Électrique Aluminium (SML)',
         sss: 'Souple Solaire (SSS)'
       };
 
-      const state = {
-        type: 'ssl',
-        size: 'medium',
-        qty: 1
-      };
+      const dimensionOptionsHtml = `
+        <option value="MK06">MK06 — 78 x 118 cm (Taille Standard la + répandue)</option>
+        <option value="CK01">CK01 — 55 x 70 cm</option>
+        <option value="CK02">CK02 — 55 x 78 cm</option>
+        <option value="CK04">CK04 — 55 x 98 cm</option>
+        <option value="MK04">MK04 — 78 x 98 cm</option>
+        <option value="MK08">MK08 — 78 x 140 cm</option>
+        <option value="PK06">PK06 — 94 x 118 cm</option>
+        <option value="PK08">PK08 — 94 x 140 cm</option>
+        <option value="PK10">PK10 — 94 x 160 cm</option>
+        <option value="SK06">SK06 — 114 x 118 cm</option>
+        <option value="SK08">SK08 — 114 x 140 cm</option>
+        <option value="UK04">UK04 — 134 x 98 cm</option>
+        <option value="UK08">UK08 — 134 x 140 cm</option>
+        <option value="CODE6">Ancien Code 6 (Dimension historique)</option>
+        <option value="CODE9">Ancien Code 9 (Dimension historique)</option>
+      `;
 
-      const buttons = document.querySelectorAll('.sim-btn');
-      buttons.forEach(btn => {
-        btn.addEventListener('click', function() {
-          const type = this.getAttribute('data-type');
-          const val = this.getAttribute('data-val');
-          const parent = this.closest('.sim-options');
-          parent.querySelectorAll('.sim-btn').forEach(b => b.classList.remove('active'));
-          this.classList.add('active');
+      let rowIdCounter = 0;
+      const rowsContainer = document.getElementById('sim-rows-container');
+      const addRowBtn = document.getElementById('add-sim-row-btn');
 
-          if (type === 'type') {
-            state.type = val;
-          } else if (type === 'size') {
-            state.size = val;
-          } else if (type === 'qty') {
-            state.qty = parseInt(val);
-          }
+      function createRow() {
+        rowIdCounter++;
+        const row = document.createElement('div');
+        row.className = 'sim-item-row';
+        row.dataset.rowId = rowIdCounter;
+        row.style.cssText = 'background:var(--bg-card); border:1px solid var(--border); border-radius:var(--r-lg); padding:1.25rem; display:grid; gap:1rem; grid-template-columns:1.2fr 1.5fr 0.6fr auto; align-items:end; shadow:var(--sh-sm); position:relative;';
 
-          calculate();
+        row.innerHTML = `
+          <div>
+            <label class="form-label" style="font-size:0.8rem; font-weight:600; color:var(--text); margin-bottom:0.35rem; display:block;">
+              Gamme de volet
+            </label>
+            <select class="form-select sim-model-select" style="font-size:0.85rem; padding:0.5rem 0.75rem;">
+              <option value="ssl">Solaire Aluminium (SSL)</option>
+              <option value="sml">Électrique Aluminium (SML)</option>
+              <option value="sss">Souple Solaire (SSS)</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label" style="font-size:0.8rem; font-weight:600; color:var(--text); margin-bottom:0.35rem; display:block;">
+              Code dimensionnel fenêtre Velux
+            </label>
+            <select class="form-select sim-dim-select" style="font-size:0.85rem; padding:0.5rem 0.75rem;">
+              ${dimensionOptionsHtml}
+            </select>
+          </div>
+          <div>
+            <label class="form-label" style="font-size:0.8rem; font-weight:600; color:var(--text); margin-bottom:0.35rem; display:block;">
+              Quantité
+            </label>
+            <input type="number" class="form-input sim-qty-input" value="1" min="1" max="20" style="font-size:0.85rem; padding:0.5rem 0.75rem; text-align:center;">
+          </div>
+          <div style="display:flex; gap:0.5rem; align-items:center;">
+            <div style="text-align:right;">
+              <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase;">Sous-total TTC</div>
+              <div class="sim-row-price" style="font-size:1.1rem; font-weight:700; color:var(--copper);">0 €</div>
+            </div>
+            <button type="button" class="sim-remove-btn" title="Supprimer cette ligne" style="background:none; border:none; color:#ef4444; font-size:1.2rem; cursor:pointer; padding:0.3rem 0.5rem; margin-left:0.5rem; display:none;">
+              ✕
+            </button>
+          </div>
+        `;
+
+        rowsContainer.appendChild(row);
+
+        // Bind events
+        const modelSelect = row.querySelector('.sim-model-select');
+        const dimSelect = row.querySelector('.sim-dim-select');
+        const qtyInput = row.querySelector('.sim-qty-input');
+        const removeBtn = row.querySelector('.sim-remove-btn');
+
+        modelSelect.addEventListener('change', calculateAll);
+        dimSelect.addEventListener('change', calculateAll);
+        qtyInput.addEventListener('input', calculateAll);
+        removeBtn.addEventListener('click', function() {
+          row.remove();
+          calculateAll();
         });
-      });
 
-      function calculate() {
-        const matUnit = priceMatrix[state.type][state.size];
-        const totalMat = matUnit * state.qty;
-        
-        let poseRate = 150;
-        if (state.qty === 2) poseRate = 150 * 0.85;
-        if (state.qty >= 3) poseRate = 150 * 0.75;
-        
-        const totalPose = Math.round(poseRate * state.qty);
-        const grandTotal = totalMat + totalPose;
-
-        document.getElementById('sim-total').textContent = grandTotal + ' € TTC';
-        document.getElementById('sim-mat').textContent = totalMat + ' € TTC (' + state.qty + ' volet' + (state.qty > 1 ? 's' : '') + ')';
-        document.getElementById('sim-pose').textContent = totalPose + ' € TTC';
-
-        const cta = document.getElementById('sim-cta');
-        const subject = encodeURIComponent('Devis volets Velux (' + state.qty + 'x ' + typeLabels[state.type] + ')');
-        cta.href = '/contact.html?service=' + encodeURIComponent('Volets roulants Velux') + '&details=' + subject;
+        calculateAll();
       }
 
-      calculate();
+      function updateRemoveButtons() {
+        const rows = rowsContainer.querySelectorAll('.sim-item-row');
+        rows.forEach(r => {
+          const btn = r.querySelector('.sim-remove-btn');
+          btn.style.display = rows.length > 1 ? 'inline-block' : 'none';
+        });
+      }
+
+      function calculateAll() {
+        updateRemoveButtons();
+        const rows = rowsContainer.querySelectorAll('.sim-item-row');
+
+        let grandMatTotal = 0;
+        let grandCount = 0;
+        let detailsSummary = [];
+
+        rows.forEach(r => {
+          const model = r.querySelector('.sim-model-select').value;
+          const dim = r.querySelector('.sim-dim-select').value;
+          let qty = parseInt(r.querySelector('.sim-qty-input').value) || 1;
+          if (qty < 1) qty = 1;
+
+          const unitMatPrice = catalogPrices[model][dim] || 619;
+          const rowMatTotal = unitMatPrice * qty;
+          const rowPoseTotal = 150 * qty;
+          const rowGrandTotal = rowMatTotal + rowPoseTotal;
+
+          r.querySelector('.sim-row-price').textContent = rowGrandTotal + ' €';
+
+          grandMatTotal += rowMatTotal;
+          grandCount += qty;
+
+          const dimText = r.querySelector('.sim-dim-select').options[r.querySelector('.sim-dim-select').selectedIndex].text.split('—')[0].trim();
+          detailsSummary.push(`${qty}x ${modelNames[model]} format ${dimText}`);
+        });
+
+        const grandPoseTotal = 150 * grandCount;
+        const grandNetTotal = grandMatTotal + grandPoseTotal;
+
+        document.getElementById('sim-total').textContent = grandNetTotal + ' € TTC';
+        document.getElementById('sim-total-count').textContent = grandCount;
+        document.getElementById('sim-plural-s').textContent = grandCount > 1 ? 's' : '';
+        document.getElementById('sim-mat').textContent = grandMatTotal + ' € TTC';
+        document.getElementById('sim-pose').textContent = grandPoseTotal + ' € TTC (' + grandCount + ' x 150 €)';
+
+        const cta = document.getElementById('sim-cta');
+        const subject = encodeURIComponent(`Devis Multi-Velux (${grandCount} volets : ${detailsSummary.join(', ')})`);
+        cta.href = `/contact.html?service=${encodeURIComponent('Volets roulants Velux')}&details=${subject}`;
+      }
+
+      addRowBtn.addEventListener('click', createRow);
+
+      // Initialize with 1 row
+      createRow();
     });
   </script>
 </body>

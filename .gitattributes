@@ -1,2 +1,26 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalisation des fins de ligne pour Atelier Willehem
+# Tous les fichiers texte web en LF (norme Linux/serveur)
+
+* text=auto eol=lf
+
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.xml  text eol=lf
+*.svg  text eol=lf
+
+# Fichiers binaires : ne pas toucher
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary

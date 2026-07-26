@@ -288,6 +288,33 @@
           return { content: [{ type: 'text', text: `Erreur technique lors de la soumission: ${error.message}` }] };
         }
       }
+      }
     });
+  }
+})();
+
+/* ===== Auto-fill form from URL params (Simulator integration) ===== */
+(function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const serviceParam = urlParams.get('service');
+  const detailsParam = urlParams.get('details');
+
+  if (serviceParam) {
+    const serviceSelect = document.getElementById('service');
+    if (serviceSelect) {
+      for (let i = 0; i < serviceSelect.options.length; i++) {
+        if (serviceSelect.options[i].value === serviceParam || serviceSelect.options[i].text === serviceParam) {
+          serviceSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  }
+
+  if (detailsParam) {
+    const descField = document.getElementById('description') || document.getElementById('message');
+    if (descField) {
+      descField.value = "=== SÉLECTION SIMULATEUR ===\n" + detailsParam + "\n==============================\n\nPrécisez votre demande ci-dessous (accès, étage, particularités...) :\n";
+    }
   }
 })();

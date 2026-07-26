@@ -288,7 +288,6 @@
           return { content: [{ type: 'text', text: `Erreur technique lors de la soumission: ${error.message}` }] };
         }
       }
-      }
     });
   }
 })();

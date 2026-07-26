@@ -1547,3 +1547,53 @@ a.service-card:hover .service-card__link { gap: var(--sp-4); }
   .about-values { grid-template-columns: 1fr; }
   .form-wrap { padding: var(--sp-6); }
 }
+
+/* ===== 25. COOKIE BANNER (RGPD) ===== */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 9999;
+  transition: opacity 0.3s var(--ease);
+}
+.cookie-banner__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding-block: var(--sp-4);
+}
+.cookie-banner__content {
+  flex: 1 1 500px;
+}
+.cookie-banner__content strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  color: var(--text);
+}
+.cookie-banner__content p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+.cookie-banner__actions {
+  display: flex;
+  gap: var(--sp-3);
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .cookie-banner__actions {
+    width: 100%;
+  }
+  .cookie-banner__actions .btn {
+    flex: 1;
+    text-align: center;
+  }
+}

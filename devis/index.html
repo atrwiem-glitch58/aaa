@@ -1,13 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
- <!-- Google Tag Manager -->
- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
- j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
- })(window,document,'script','dataLayer','GTM-5S56J85B');</script>
- <!-- End Google Tag Manager -->
+ 
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta name="robots" content="index, follow">
@@ -82,10 +76,7 @@
  </script>
 </head>
 <body>
- <!-- Google Tag Manager (noscript) -->
- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S56J85B"
- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- <!-- End Google Tag Manager (noscript) -->
+ 
 
  <header class="header" id="header">
  <div class="container header__inner">
@@ -234,6 +225,12 @@
  <label class="form-label" for="message">Description de votre projet</label>
  <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Décrivez votre besoin (fuite, rénovation, surface approximative, maison ancienne/récente...)"></textarea>
  </div>
+ </div>
+ <div class="form-group form-group--full" style="margin-top:1rem;">
+ <label style="display:flex; gap:0.5rem; align-items:flex-start; font-size:0.85rem; color:var(--text-muted); cursor:pointer;">
+ <input type="checkbox" name="rgpd_consent" required style="margin-top:0.25rem;">
+ <span>En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de ma demande. <a href="/mentions-legales.html" style="color:var(--copper); text-decoration:underline;" target="_blank">Politique de confidentialité</a>.</span>
+ </label>
  </div>
  <button type="submit" class="btn btn--primary btn--lg btn--full" style="margin-top:1.5rem;">Envoyer ma demande de devis gratuit</button>
  </form>
@@ -499,5 +496,7 @@
  <span></span><span>06 33 32 82 76</span>
  </a>
  <script src="/assets/js/main.js" defer></script>
+
+ <script src="/assets/js/cookie-consent.js" defer></script>
 </body>
 </html>

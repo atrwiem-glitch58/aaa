@@ -359,10 +359,10 @@
  <!-- COLONNE GAUCHE: ARGUMENTS VENTE TRANSACTIONNELS -->
  <div>
  <nav aria-label="Fil d'Ariane">
- <ol class="breadcrumb__list" style="margin-bottom:0.75rem;">
- <li class="breadcrumb__item"><a href="/" style="color:var(--text-muted)">Accueil</a><span class="breadcrumb__sep" style="color:var(--border-dark)">›</span></li>
- <li class="breadcrumb__item"><a href="/velux/" style="color:var(--text-muted)">Velux</a><span class="breadcrumb__sep" style="color:var(--border-dark)">›</span></li>
- <li class="breadcrumb__item" style="color:var(--primary); font-weight:600;">Volets Roulants Velux</li>
+ <ol class="breadcrumb__list">
+ <li class="breadcrumb__item"><a href="/">Accueil</a><span class="breadcrumb__sep">›</span></li>
+ <li class="breadcrumb__item"><a href="/velux/">Velux</a><span class="breadcrumb__sep">›</span></li>
+ <li class="breadcrumb__item">Volets Roulants Velux</li>
  </ol>
  </nav>
  
@@ -423,7 +423,7 @@
  <label class="form-label" for="tx-type">Modèle souhaité *</label>
  <select class="form-select" id="tx-type" name="modele_souhaite" required>
  <option value="Solaire (SSL) - Recommandé">Volet Solaire Aluminium (SSL) — Sans câble</option>
- <option value="Électrique (SML)">Volet Électrique Aluminium (SML) — Filaire 230V</option>
+ <option value="Électrique (SML) - Réservé fenêtres INTEGRA">Volet Électrique (SML) — Réservé fenêtres INTEGRA</option>
  <option value="Souple Solaire (SSS)">Volet Souple Solaire (SSS) — Protection solaire</option>
  <option value="Je ne sais pas / Besoin d'aide">Je ne sais pas (Besoin de conseil)</option>
  </select>
@@ -540,15 +540,15 @@
  <!-- CARD 2: ELECTRIQUE -->
  <div class="product-card">
  <h3 style="font-size:1.2rem; margin-bottom:0.25rem;">Volet Roulant Électrique (SML)</h3>
- <p style="font-size:0.82rem; color:var(--text-muted);">Aluminium · Raccordement filaire 230V</p>
+ <p style="font-size:0.82rem; color:var(--text-muted);">Aluminium · Uniquement si fenêtre déjà électrique</p>
  
  <div class="product-price">
  445 € – 705 € <span>TTC (Fourniture)</span>
  </div>
 
  <ul style="list-style:none; padding:0; display:grid; gap:0.6rem; font-size:0.85rem; margin-block:1rem; flex-grow:1;">
- <li>Idéal pour fenêtres électriques INTEGRA</li>
- <li>Commande murale filaire</li>
+ <li><strong>Réservé</strong> aux fenêtres INTEGRA</li>
+ <li style="color:#b36827; font-weight:500;">⚠️ Nous ne réalisons pas de création de ligne électrique ni de saignée.</li>
  <li>Alimentation continue 230V</li>
  <li>Garantie 5 ans Velux + Décennale pose (150 €)</li>
  </ul>
@@ -636,10 +636,10 @@
   <section class="section" id="simulateur">
     <div class="container">
       <div class="sim-card reveal">
-        <div class="text-center" style="max-width:650px; margin-inline:auto; margin-bottom:2rem;">
-          <span class="section-label">Simulateur Personnalisé Sur-Mesure</span>
-          <h2>Calculez le prix exact de vos volets Velux</h2>
-          <p style="color:var(--text-muted); font-size:0.9rem;">Sélectionnez le modèle et la référence exacte de vos fenêtres. Vous pouvez ajouter autant de fenêtres de tailles différentes que vous le souhaitez :</p>
+        <div class="text-center" style="max-width:700px; margin-inline:auto; margin-bottom:2rem;">
+          <span class="section-label">En direct avec votre artisan</span>
+          <h2>Estimez le coût de vos volets posés</h2>
+          <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">Sélectionnez le modèle et la référence de vos fenêtres. Il n'y a ici <strong>aucun intermédiaire ni plateforme de devis</strong> : le calcul inclut le matériel et la pose que je viendrai réaliser moi-même.</p>
         </div>
 
         <!-- CONTENEUR DES LIGNES DE SIMULATION -->
@@ -653,16 +653,16 @@
 
         <!-- RESULTAT CALCULÉ GLOBAL -->
         <div style="background:linear-gradient(135deg, rgba(192,119,58,0.08) 0%, rgba(26,37,53,0.03) 100%); border:1px solid var(--copper); border-radius:var(--r-lg); padding:1.75rem; margin-top:2rem;">
-          <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; color:var(--text-muted);">Estimation globale exacte (Matériel + Pose artisanale 150 €/volet)</div>
+          <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:700; color:var(--text-muted);">Mon estimation pour votre projet (Matériel + Pose)</div>
           <div id="sim-total" style="font-size:2.4rem; font-weight:700; color:var(--copper); line-height:1.1; margin-block:0.5rem;">0 € TTC</div>
 
           <div style="font-size:0.88rem; color:var(--text-muted); display:grid; gap:0.5rem; margin-block:1rem; border-top:1px solid var(--border); padding-top:0.9rem;">
             <div style="display:flex; justify-content:space-between;">
-              <span>Total Fourniture Velux (<span id="sim-total-count">0</span> volet<span id="sim-plural-s">s</span>) :</span>
+              <span>Matériel Velux d'origine (<span id="sim-total-count">0</span> volet<span id="sim-plural-s">s</span>) :</span>
               <strong id="sim-mat" style="color:var(--text);">0 € TTC</strong>
             </div>
             <div style="display:flex; justify-content:space-between;">
-              <span>Main d'œuvre pose décennale Atelier Willehem (150 € / volet) :</span>
+              <span>Ma main d'œuvre pour l'installation (150 € / volet) :</span>
               <strong id="sim-pose" style="color:var(--text);">0 € TTC</strong>
             </div>
           </div>
@@ -887,7 +887,7 @@
             </label>
             <select class="form-select sim-model-select" style="font-size:0.85rem; padding:0.5rem 0.75rem;">
               <option value="ssl">Solaire Aluminium (SSL)</option>
-              <option value="sml">Électrique Aluminium (SML)</option>
+              <option value="sml">Électrique (SML) — Réservé fenêtres INTEGRA</option>
               <option value="sss">Souple Solaire (SSS)</option>
             </select>
           </div>

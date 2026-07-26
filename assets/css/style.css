@@ -574,8 +574,8 @@ strong { color: var(--text); font-weight: 600; }
   color: var(--text-muted);
 }
 .breadcrumb__item a { transition: color 0.2s; }
-.breadcrumb__item a:hover { color: var(--zinc); }
-.breadcrumb__item:last-child { color: var(--zinc-light); }
+.breadcrumb__item a:hover { color: var(--copper); }
+.breadcrumb__item:last-child { color: var(--copper-light); }
 .breadcrumb__sep { color: var(--border-light); font-size: 0.7rem; }
 
 /* ===== 10. TRUST STRIP ===== */

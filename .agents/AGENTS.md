@@ -18,3 +18,7 @@
 ## 4. Ergonomie Mobile (Responsive)
 - **Simulateurs Multi-lignes** : Les sélecteurs et cartes s'empilent en 1 colonne fluide sur smartphone (< 900px).
 - **Libellés des boutons CTA** : Raccourcir les textes trop longs sur mobile (ex: `Demander mon devis →` sur mobile via `.hide-mobile` vs version complète sur ordinateur).
+
+## 5. Navigation (Fil d'Ariane)
+- **Présence Obligatoire** : Un fil d'ariane (`.breadcrumb`) doit être présent sur toutes les pages du site (sauf la page d'accueil).
+- **Style** : Il doit respecter la charte graphique et utiliser la couleur cuivre (`var(--copper)`) au survol et pour l'élément final, plutôt que le zinc.

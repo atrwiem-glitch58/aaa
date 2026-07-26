@@ -6,8 +6,7 @@
 
 ## 2. Typographie & Couleurs (Light Theme & Sobriété)
 - **Thème Clair** : Utiliser les fonds clairs natifs du design system (`var(--bg)` `#FAFAF7`, `var(--bg-alt)` `#F3F1EC`, `var(--bg-card)` `#FFFFFF`).
-- **Zéro Gras (Strict)** : INTERDICTION TOTALE d'utiliser des polices en gras (`font-weight: 600`, `font-weight: 700`, `bold`, ou balises `<strong>`/`<b>`). La police maximale autorisée sur tout le site (y compris pour les prix) est `font-weight: 400`.
-- **Titres (H1, H2, H3)** : Typographie `font-family: var(--font-display)` (Lexend Deca) avec graisse légère `font-weight: 300`.
+- **Titres (H1, H2, H3)** : Typographie `font-family: var(--font-display)` (Lexend Deca) avec graisse légère `font-weight: 300` (jamais de gras lourd 700 sur les titres principaux H1).
 - **Bandeaux & Labels (`.section-label`)** : Texte brut avec indicateur typographique natif sans aplats de couleur, overlays ou fonds cuivrés voyants.
 - **Boutons & Cartes** : Formes épurées, bordures fines (`1px solid var(--border)`), ombrages très légers (`var(--sh-card)`).
 

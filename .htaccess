@@ -74,3 +74,6 @@ ServerSignature Off
     RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
     RewriteRule ^(.*)$ - [F,L]
 </IfModule>
+
+# Redirection 301 de l'ancienne URL goutieres (faute de frappe) vers gouttieres
+Redirect 301 /goutieres/ https://atelierwillehem.fr/gouttieres/
